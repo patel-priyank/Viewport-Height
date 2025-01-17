@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewport Height</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav>
+      <button type="button" class="btn-vh">vh</button>
+      <button type="button" class="btn-svh">svh</button>
+      <button type="button" class="btn-lvh">lvh</button>
+      <button type="button" class="btn-dvh">dvh</button>
+    </nav>
+
+    <div class="info">
+      The CSS units vh, svh, lvh, and dvh are viewport-relative lengths used to define element dimensions based on the
+      viewport's height. The vh unit represents 1% of the current viewport height, commonly used for general layouts.
+      The newer svh measures 1% of the smallest possible viewport height, useful for ensuring designs adapt to UI
+      overlays like virtual keyboards. Conversely, lvh represents 1% of the largest possible viewport height, ignoring
+      dynamic changes caused by browser UI, making it ideal for fullscreen layouts. Lastly, dvh dynamically adjusts to
+      changes in viewport height, updating in real time when UI elements like address bars or keyboards appear or
+      disappear, providing responsive behavior on modern devices. These units are best experienced on mobile devices,
+      where viewport changes due to virtual keyboards and UI overlays are most noticeable.
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
